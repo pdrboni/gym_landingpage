@@ -1,0 +1,136 @@
+.home {
+  position: relative;
+  z-index: 0;
+}
+
+.home:after {
+  content: "";
+  position: absolute;
+  background: rgba(0, 0, 0, 0.6);
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+
+}
+
+.container1 {
+  position: relative;
+  height: 500px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.container2 {
+  padding: 10px;
+  display: grid;
+  column-gap: 30px;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.item img {
+  border: solid 2px var(--color5);
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+
+.item {
+  justify-content: center;
+}
+
+.highlight-text1 {
+  color: var(--color3);
+  font-weight: 700;
+}
+.highlight-text2 {
+  color: var(--color3);
+}
+
+.white-bg-container {
+  background-color: rgb(46, 46, 46);
+  margin: 0;
+}
+
+.white-bg-container {
+  border: solid var(--color5);
+  border-radius: 10px;
+}
+
+.read-more {
+  border-style: none;
+  padding: 10px;
+  color: white;
+  font-weight: 700;
+  background-color: var(--color3);
+  border-radius: 10px;
+  margin-top: 50px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.read-more:hover {
+  background-color: var(--color4);
+}
+
+.content-modal {
+  height: 500px;
+  padding: 20px;
+  padding-left: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  overflow: auto;
+  align-items: center;
+}
+
+.modal-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  grid-row: span 3;
+}
+
+.content-modal img {
+  height: 150px;
+  width: 200px;
+  border-radius: 10px;
+}
+
+@media (max-width: 476px) {
+  .container2 {
+    display: grid;
+    column-gap: 30px;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 746px) {
+  .content-modal {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+  }
+
+  .modal-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-column: span 3;
+  }
+
+  .content-modal img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+  }
+}

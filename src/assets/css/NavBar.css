@@ -1,0 +1,40 @@
+.logo {
+  height: 100px;
+  width: 100px;
+  margin-left: 50px;
+}
+
+.navbar {
+  --bs-navbar-padding-y: 0px;
+  --bs-navbar-brand-padding-y: 0px;
+  --bs-navbar-nav-link-padding-x: 2rem;
+}
+
+.navbar-nav {
+  --bs-nav-link-font-weight: 700;
+  --bs-nav-link-padding-y: 1rem;
+}
+
+.justify-content-end {
+  justify-content: space-between;
+}
+
+.navbar-dark {
+  --bs-navbar-hover-color: var(--color4);
+  --bs-navbar-color: var(--color1)
+}
+
+.navbar-toggler-x {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  background-image: url("src/assets/img/x.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+li:hover {
+  color: var(--color4);
+}
